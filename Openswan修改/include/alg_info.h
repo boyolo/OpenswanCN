@@ -47,15 +47,15 @@ struct esp_info
 };
 
 /*试验结构体*/
-struct ike_info
+struct ike_info /*32*/
 {
-    bool ike_default;
-    u_int16_t ike_ealg;                /* encrytion algorithm - bit 15set for reserved*/
-    u_int8_t ike_halg;                 /* hash algorithm */
-    u_int8_t ike_prfalg;               /* prf algorithm (IKEv2) */
-    size_t ike_eklen;                  /* how many bits (of key) required by encryption algo */
-    size_t ike_hklen;                  /* how many bits (of key) required by hash algo */
-    enum ikev2_trans_type_dh ike_modp; /* which modp group to use */
+    bool ike_default;                  /*1*/
+    u_int16_t ike_ealg;                /* 2 encrytion algorithm - bit 15set for reserved*/
+    u_int8_t ike_halg;                 /* 1 hash algorithm */
+    u_int8_t ike_prfalg;               /* 1 prf algorithm (IKEv2) */
+    size_t ike_eklen;                  /* 8 how many bits (of key) required by encryption algo */
+    size_t ike_hklen;                  /* 8 how many bits (of key) required by hash algo */
+    enum ikev2_trans_type_dh ike_modp; /* 4 which modp group to use */
 };
 
 #define ALG_INFO_COMMON      \
