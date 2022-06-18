@@ -1,0 +1,13 @@
+{
+  "C_Cpp.errorSquiggles": "Disabled",
+  "files.associations": {
+    "*.vue": "vue",
+    "*.wxss": "css",
+    "*.cjson": "jsonc",
+    "*.wxs": "javascript",
+    "*.js": "javascript",
+    "*.wxml": "html",
+    "rcv_whack.h": "c",
+    "ietf_constants.h": "c"
+  }
+}
